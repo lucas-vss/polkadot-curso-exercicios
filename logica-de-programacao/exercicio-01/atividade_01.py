@@ -1,0 +1,1 @@
+print("Olá, sou o Lucas e moro na cidade de Eusébio-CE")
