@@ -1,11 +1,10 @@
-num = int(input("Digite um número para ver sua sequência de Fibonacci: "))
+def is_it_even_or_odd(num):
+    if num % 2 == 0:
+        print("É par")
+    else:
+        print("É impar")
 
-fibonacci_sequence = []
-first, second = 0, 1
 
-while len(fibonacci_sequence) < num:
-    fibonacci_sequence.append(first)
-    first, second = second, first + second
-    
-print(f"A sequência de Fibonacci até {num} é: ")
-print(fibonacci_sequence) 
+num = int(input("Digite um número: "))
+
+is_it_even_or_odd(num)

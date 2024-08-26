@@ -1,4 +1,3 @@
-num = int(input("Digite um número para mostrar sua tabuada: "))
-
-for i in range(1, 11):
-    print(f"{num} x {i} = {num * i}")
+for number in range(1, 11):
+    if number % 2 == 0:
+        print(number)

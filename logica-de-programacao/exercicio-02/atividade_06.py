@@ -1,11 +1,8 @@
-vowels = ['a', 'e', 'i', 'o', 'u']
+sum = 0
+num = -1
 
-phrase = input("Digite uma frase: ")
+while num != 0:
+    num = int(input("Digite 0 para sair ou um número diferente de 0 para continuar: "))
+    sum += num
 
-count = 0
-
-for character in phrase:
-    if character in vowels:
-        count += 1
-
-print(f"A frase contém {count} vogais")
+print(f"O resultado da soma dos números é: {sum}")

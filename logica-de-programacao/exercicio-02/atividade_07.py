@@ -1,18 +1,14 @@
-count = 0
-score = 0
-amount = 0
+shopping_list = list()
 
-print("Digite -1 para parar de obter as notas e calcular a média")
+print("Digite SAIR quando quiser finalizar a lista de compras \n")
 
 while True:
-    score = float(input("Digite a nota: "))
-    
-    if score == -1:
+    item = input("Adicione um novo item na sua lista: ")
+
+    if item == "SAIR":
         break
-    
-    amount += score
-    count += 1
 
-media = amount / count
+    shopping_list.append(item)
 
-print(f"A média das notas foi: {media}")
+print("Lista de compras:")
+print(shopping_list)

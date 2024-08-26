@@ -1,13 +1,10 @@
-num1 = int(input("Digite um número: "))
-num2 = int(input("Digite um número: "))
-num3 = int(input("Digite um número: "))
+phrase = input("Digite uma frase: ")
+letter = input("Qual letra você quer verificar a quantidade na frase? ")
 
-numbers = [num1, num2, num3]
+count = 0
 
-for i in range(len(numbers)):
-    if numbers[i] > numbers[len(numbers) - 1]:
-        aux = numbers[i]
-        numbers[i] = numbers[len(numbers) - 1]
-        numbers[len(numbers) - 1] = aux
+for character in phrase:
+    if character == letter:
+        count += 1
 
-print(numbers)
+print(f"A letra {letter} apareceu {count} vezes na frase")
